@@ -1,0 +1,10 @@
+---
+table_name: approver_groups
+classes:
+- ApproverGroup
+feature_categories:
+- code_review
+- source_code_management
+description: Group approvers of given merge request
+introduced_by_url: https://gitlab.com/gitlab-org/gitlab/-/merge_requests/743
+milestone: '8.13'

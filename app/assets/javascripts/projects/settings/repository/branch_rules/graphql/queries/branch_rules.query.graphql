@@ -1,0 +1,25 @@
+query getBranchRules($projectPath: ID!) {
+  project(fullPath: $projectPath) {
+    id
+    branchRules {
+      nodes {
+        name
+        isDefault
+        branchProtection {
+          allowForcePush
+          codeOwnerApprovalRequired
+        }
+        externalStatusChecks {
+          nodes {
+            id
+          }
+        }
+        approvalRules {
+          nodes {
+            id
+          }
+        }
+      }
+    }
+  }
+}
